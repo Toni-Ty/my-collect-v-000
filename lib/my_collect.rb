@@ -1,10 +1,11 @@
 def my_collect(collection)
   i = 0
+  student_collection
   while i < collection.length
-    yield(collection[i])
+    student_collection << yield(collection[i])
     i += 1
   end
-  collection
+  student_collection
 end
 
 array = ["Tim Jones", "Tom Smith", "Jim Campagno"]
