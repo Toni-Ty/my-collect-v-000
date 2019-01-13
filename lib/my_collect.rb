@@ -7,4 +7,4 @@ def my_collect(collection)
   collection
 end
 
-my_collect { |name| puts "Hi, #{name.split(" ").first}" }
+my_collect(students) { |student| puts "Hi, #{name.split(" ").first}" }
