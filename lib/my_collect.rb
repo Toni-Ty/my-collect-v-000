@@ -4,10 +4,7 @@ def my_collect(collection)
     yield(collection[i])
     i += 1
   end
-  collection
+  collection.upcase
 end
 
-collection = ['ruby', 'javascript', 'python', 'objective-c']
-my_collect(collection) do |lang|
-  lang.upcase
-end
+my_collect(["Tim", "Tom", "Jim"]) { |name| puts "Hi, #{name}" }
