@@ -4,5 +4,9 @@ def my_collect(collection)
     yield(collection[i])
     i += 1
   end
-  collection.upcase
+  collection
+end
+
+my_collect(collection) do |lang|
+  lang.upcase
 end
