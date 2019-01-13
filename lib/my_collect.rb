@@ -8,4 +8,4 @@ def my_collect(collection)
 end
 
 array = ["Tim Jones", "Tom Smith", "Jim Campagno"]
-my_collect(array) do { |student| puts "Hi, #{student.split(" ").first}" }
+my_collect(array) {|student| puts "Hi, #{student.split(" ").first}" }
